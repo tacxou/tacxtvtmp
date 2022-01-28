@@ -19,10 +19,16 @@ minimum-scale=1.0">
         
         .logo {
             transform: scale(1.25);
+            margin-top: 35px;
+            width: 50%;
+            margin-bottom: 25px;
         }
         .logo,.countdown,.title {
             width: 100%;
             text-align: center;
+        }
+        #container {
+            position: relative;
         }
         .countdown {
             margin: 0;
@@ -39,6 +45,7 @@ minimum-scale=1.0">
             font-size: 36px;
         }
         .ad {
+            text-align: center;
             left: 0;
             -webkit-animation: fadeIn 1s;
             animation: fadeIn 1s;
@@ -66,8 +73,8 @@ url('https://static-cdn.jtvnw.net/jtv_user_pictures/5f75929f-f4d9-4dc0-9acd-13ea
 <body>
 <div id="ad" class="ad" style="display: none; opacity: 0;">
     <div class="title" id="title">Bientot sur ce stream !</div>
-    <img class="logo" 
-src="https://cdn.discordapp.com/attachments/923218840308035644/936701531716206652/Birthday-cake-02.png">
+    <div id="container"><img class="logo" 
+src="https://cdn.discordapp.com/attachments/923218840308035644/936701531716206652/Birthday-cake-02.png"></div>
     <p id="countdown" class="countdown">Dans -- jours --h --m</p>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
